@@ -8,7 +8,7 @@ API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 LANGUAGE_MAP = {
     '.js': ('javascript', 'jest'),
-    '.jsx': ('javasript', 'jest'),
+    '.jsx': ('javascript', 'jest'),
     '.ts': ('typescript', 'jest'),
     '.tsx': ('typescript', 'jest'),
     '.py': ('python', 'pytest'),
@@ -16,7 +16,7 @@ LANGUAGE_MAP = {
     '.cpp': ('c++', 'googletest'),
     '.c': ('c', 'unity'),
     '.go': ('go', 'testing'),
-    '.rs': ('rust', 'cargo teset'),
+    '.rs': ('rust', 'cargo test'),
     '.rb': ('ruby', 'rspec'),
     '.php': ('php', 'phpunit'),
     '.swift': ('swift', 'xctest'),
@@ -24,7 +24,7 @@ LANGUAGE_MAP = {
 }
 
 def detect_language(filepath):
-    """Auto-detext language and framework from file extension""""
+    """Auto-detext language and framework from file extension"""
     _, ext = os.path.splitext(filepath)
 
     if ext in LANGUAGE_MAP:
@@ -39,9 +39,9 @@ def read_code_file(filepath):
     try:
         with open(filepath, 'r') as f:
             return f.read()
-        except FileNotFoundError:
+    except FileNotFoundError:
             print(f"❌ File not found: {filepath}")
-        sys.exit(1)
+            sys.exit(1)
 
 def generate_tests(code, language, framework, filepath):
     """Use Claude to generate tests"""
@@ -118,7 +118,7 @@ def main():
     code_file = sys.argv[1]
 
     #Check if language and framework were manually specified
-    if len(sys.argv) >= 4;
+    if len(sys.argv) >= 4:
         language = sys.argv[2]
         framework = sys.argv[3]
         print(f"🔧 Manual mode: {language} + {framework}")
@@ -143,4 +143,15 @@ def main():
 
     #Give helpful command for running tests
     if language in ['javascript', 'typescript']:
-        print("")
+        print("npx jest")
+    elif language == 'python':
+        print("pytest")
+    elif language == 'go':
+        print("go test")
+    elif language == 'rust':
+        print("cargo test")
+    else:
+        print(f"{framework}")
+
+if __name__ == "__main__":
+    main()
