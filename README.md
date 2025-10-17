@@ -1,8 +1,8 @@
 # CLU - Codified Testing Utility
 
-> *"I'm CLU. I'm here to create the perfect system."*
+> *"I'm CLU. I'm here to create the perfect system. "*
 
-An AI-powered test generation agent that writes comprehensive unit tests for your code automatically. Inspired by TRON: Ares.
+An AI-powered test generation agent that writes comprehensive unit tests for your code automatically. Inspired by TRON: Legacy.
 
 ![Language](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
