@@ -30,7 +30,7 @@ And CLU handles the rest.
 - 🔍 **Auto-Detection** - Automatically detects language and testing framework from file extension
 - 🎯 **Comprehensive** - Generates tests for main functionality, edge cases, and error handling
 - ⚡ **Fast** - Generates full test suites in seconds
-- 🌐 **Multi-Language** - Supports JavaScript, TypeScript, Python, Go, Rust, Java, C++, and more
+- 🌐 **Multi-Language** - Supports JavaScript, TypeScript, (TESTING THESE RN: Python, Go, Rust, Java, C++, and more..)
 - 💡 **Smart Naming** - Follows language-specific test file conventions
 
 ## Currently Supported
