@@ -87,25 +87,14 @@ CLU will automatically:
 3. Generate comprehensive tests
 4. Save them with proper naming conventions
 
-### Examples
+## Examples
 
-**JavaScript:**
-```bash
+### JavaScript (Tested ✅)
 python3 clu.py app.js
 # Creates: app.test.js with Jest tests
-```
 
-**Python:**
-```bash
-python3 clu.py calculator.py
-# Creates: test_calculator.py with pytest tests
-```
-
-**Go:**
-```bash
-python3 clu.py main.go
-# Creates: main_test.go with Go testing tests
-```
+### Coming Soon
+Python, Go, and other languages will work similarly once implemented.
 
 ### Manual Override
 
