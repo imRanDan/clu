@@ -33,21 +33,18 @@ And CLU handles the rest.
 - 🌐 **Multi-Language** - Supports JavaScript, TypeScript, Python, Go, Rust, Java, C++, and more
 - 💡 **Smart Naming** - Follows language-specific test file conventions
 
-## Supported Languages
+## Currently Supported
+- ✅ **JavaScript/JSX** - Jest (tested and working)
+- ✅ **TypeScript/TSX** - Jest (tested and working)
 
-| Language   | Framework    | Extension        |
-|------------|--------------|------------------|
-| JavaScript | Jest         | `.js`, `.jsx`    |
-| TypeScript | Jest         | `.ts`, `.tsx`    |
-| Python     | pytest       | `.py`            |
-| Go         | testing      | `.go`            |
-| Rust       | cargo test   | `.rs`            |
-| Java       | JUnit        | `.java`          |
-| C++        | Google Test  | `.cpp`           |
-| Ruby       | RSpec        | `.rb`            |
-| PHP        | PHPUnit      | `.php`           |
-| Swift      | XCTest       | `.swift`         |
-| Kotlin     | JUnit        | `.kt`            |
+## Roadmap - Coming Soon
+- Python (pytest)
+- Go (testing)
+- Rust (cargo test)
+- Java (JUnit)
+- And more...
+
+CLU's architecture is language-agnostic, so adding new languages is straightforward. Contributions welcome!
 
 ## Installation
 
