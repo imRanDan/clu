@@ -179,7 +179,7 @@ CLU uses the Claude API, which has usage-based pricing. Typical costs:
 - **Medium file** (~500 lines): ~$0.05
 - **Large file** (~1000 lines): ~$0.10
 
-Anthropic provides **$5 in free credits** when you sign up, which covers hundreds of test generations.
+Anthropic provides **$5 in free credits** when you sign up, which covers hundreds of test generations. (STILL FIGURING OUT COSTS FOR THIS PROJECT BUT THESE WERE SOME I'VE SEEN THROUGH RESEARCH)
 
 ## How It Works
 
