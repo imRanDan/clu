@@ -113,17 +113,6 @@ npm install --save-dev jest
 npx jest
 ```
 
-**Python:**
-```bash
-pip install pytest
-pytest
-```
-
-**Go:**
-```bash
-go test
-```
-
 ## Example Output
 
 Given this simple JavaScript file:
