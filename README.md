@@ -75,6 +75,16 @@ ANTHROPIC_API_KEY=your-api-key-here
 
 ## 💻 Usage
 
+### CLI Output Example
+
+![CLU CLI in action](https://github.com/imRanDan/clu/blob/main/screenshot.png?raw=true)
+
+The above shows CLU:
+- Detecting JavaScript + Jest framework
+- Reading and analyzing `example.js`
+- Generating comprehensive Jest tests
+- Saving results to `example.test.js`
+
 ### Basic Usage
 
 ```bash
